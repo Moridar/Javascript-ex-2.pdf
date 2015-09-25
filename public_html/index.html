@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Javascript ex 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="1" onclick="updateDiv(1, 'firstname')">1st div</div>
+        <div id="2" onclick="updateDiv(2, 'lname')">2nd div</div>
+        <div id="3" onclick="updateDiv(3, 'phone')">3rd div</div>
+        <div id="4" onclick="updateDiv(4, 'email')">4th div</div>
+
+        <form onclick="updateAll()">
+            <input type="text" id="firstname" value="First Name">
+            <input type="text" name="lastname" id="lname" value="Last Name">
+            <input type="text" name="phone" id="phone" value="Phone Number">
+            <input type="text" name="email" id="email" value="email">
+            <button type="button" onclick="updateAll()"> Try it</button>
+
+        </form>
+
+
+        <form onclick="updateAll()">
+            <br><br><div>Student Admin</div>
+            <input type="text" id="studId" value="ID">
+            <input type="text" id="name" value="Full Name">
+            <input type="text" id="CR" value="Class Room">
+
+        </form>
+        <button type="button" onclick="adminStud(getStudent(), logItem)"> Show Student</button>
+        <button type="button" onclick="adminStud(getStudent(), registerItem)"> Register Student</button>
+
+        <script src="myScript.js">
+
+            
+        </script>
+    </body>
+</html>

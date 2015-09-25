@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery testing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="jQueryScript.js    "></script>
+    </head>
+    <body>
+        <div>toDo List</div>
+        <ul id="toDoList">
+            <li onclick="$(this).remove()">1st item</li>
+            <li onclick=$(this).remove()>2nd item</li>
+        </ul>
+        <form>
+            <input type="text" id="input" value="Insert new toDo">
+            <!--<button type="button" onclick="$('#toDoList').append('<li onclick=$(this).remove()>'+ $('#input')[0].value +'</li>')"> Tilføj</button>-->
+            <button type='button'>Tilføj</button>
+        </form>    
+    </body>   
+</html>
